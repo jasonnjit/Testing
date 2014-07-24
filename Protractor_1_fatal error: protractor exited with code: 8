@@ -3,4 +3,9 @@ Met problem as below.
 fatal error: protractor exited with code: 8
 
 Solution:
-
+1. Selenium should use JDK, rather than JRE, so install JDK. 
+2. Update environment variables, add JAVA_HOME(location of JDK, the upper level of JDK' bin file location), 
+and Path(JDK bin location). Then, close cmd, reopen a cmd. Find Java -version changed to JDK's location.
+3. This solution worked the problem out, but there are still problems while running "Grunt test:e2e", try to 
+find if these are test files' problems.
+4. Also, it is still coming out the fatal error: protractor exited with code: 8
