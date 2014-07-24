@@ -1,0 +1,17 @@
+Testing against multiple browsers
+
+
+In the protractor.conf.js file, in capabilities, replace the browerName line with two or more browserName lines, like below.
+
+
+capabilities: {
+	'browserName': 'firefox'
+  },
+
+
+
+multiCapabilities: [{
+  'browserName': 'firefox'
+}, {
+  'browserName': 'chrome'
+}]
