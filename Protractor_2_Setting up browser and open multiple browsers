@@ -1,7 +1,7 @@
 Testing against multiple browsers
 
 
-In the protractor.conf.js file, in capabilities, replace the browerName line with two or more browserName lines, like below.
+1. In the protractor.conf.js file, in capabilities, replace the browerName line with two or more browserName lines, like below.
 
 
 capabilities: {
@@ -15,3 +15,12 @@ multiCapabilities: [{
 }, {
   'browserName': 'chrome'
 }]
+
+
+2. Check link below.
+http://stackoverflow.com/questions/20692008/protractor-run-multiple-tests-in-parallel-on-different-browsers
+
+If you would rather have each test file just run once, but split up among multiple browsers, then use the splitTestsBetweenCapabilities option:
+
+splitTestsBetweenCapabilities: true
+This blog post goes into further detail about the splitTestsBetweenCapabilities
