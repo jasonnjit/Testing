@@ -3,13 +3,12 @@ Testing against multiple browsers
 
 1. In the protractor.conf.js file, in capabilities, replace the browerName line with two or more browserName lines, like below.
 
-
+1.1 Only one browser
 capabilities: {
 	'browserName': 'firefox'
   },
 
-
-
+1.2 Multiple browsers
 multiCapabilities: [{
   'browserName': 'firefox'
 }, {
@@ -24,3 +23,8 @@ If you would rather have each test file just run once, but split up among multip
 
 splitTestsBetweenCapabilities: true
 This blog post goes into further detail about the splitTestsBetweenCapabilities
+
+
+Also, here is a reference protractor.conf.js from Angular team.
+
+https://github.com/angular/protractor/blob/master/docs/referenceConf.js
