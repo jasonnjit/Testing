@@ -1,0 +1,18 @@
+1. get the current url when we click the menu and redirect us to the website out of our app
+Ex:
+The logo 
+
+
+2. get current url inside the app 
+Ex: 
+login function, like below
+
+it('should allow user1 to login', function () {
+            var expectUrl = ptor.baseUrl + '/#/landing'
+            loginPage.login('ADMINGL3487', 'pASSW0RD');
+            ptor.sleep(10000);
+            expect(ptor.getCurrentUrl()).toBe(expectUrl);
+
+
+//            expect(element(by.id('home')).isDisplayed()).toBe(true);
+        });
