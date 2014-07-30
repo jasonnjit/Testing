@@ -14,6 +14,7 @@ multiCapabilities: [{
 }, {
   'browserName': 'chrome'
 }]
+--------------ie is not starting now----------------
 
 
 2. Check link below.
