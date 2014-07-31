@@ -1,6 +1,8 @@
 1. get the current url when we click the menu and redirect us to the website out of our app
 Ex:
 The logo 
+This is issue is finally fixed. Use browser.driver.getCurrentUrl();
+So, we can get the Url non-angular.
 
 
 2. get current url inside the app 
