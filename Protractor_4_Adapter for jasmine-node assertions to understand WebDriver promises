@@ -1,0 +1,10 @@
+Adapter for jasmine-node assertions to understand WebDriver promises
+
+Find the link below.
+https://github.com/angular/protractor/issues/10
+
+
+You should be able to write:
+
+var myElem = ptor.findElement(protractor.by.Id('#yourelem'));
+expect(myElem.getText()).toEqual('foobar');
