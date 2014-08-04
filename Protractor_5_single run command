@@ -1,0 +1,9 @@
+How to run a single testing script?
+Check this:
+https://www.npmjs.org/package/grunt-protractor-runner
+
+Ex.grunt protractor --specs=specs/some-test.js 
+
+In my project, it is:
+grunt test:e2e --specs=test\e2e\login-spec.js
+
