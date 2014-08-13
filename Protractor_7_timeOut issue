@@ -1,0 +1,6 @@
+There are always timeout issues. 
+
+Check out this link, it includes all timeout issues' scenarios:
+
+https://github.com/angular/protractor/blob/master/docs/timeouts.md
+
