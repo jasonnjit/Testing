@@ -1,0 +1,9 @@
+.count is for var
+
+var fieldLabels = element.all(by.repeater('field in mainTable.fieldLabels track by $id(field)'));
+    expect(fieldLabels.count()).toBe(6);  
+    
+    
+    
+.length, please search length on this url, the API of Protractor:
+https://github.com/angular/protractor/blob/master/docs/api.md#api-protractorby-prototype-binding
