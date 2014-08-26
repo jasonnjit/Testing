@@ -1,0 +1,4 @@
+Protractor is built on top of WebDriver (Selenium) for AngularJs app, but it's possible to use it for other non-AngularJs applications.
+
+Check this:
+https://github.com/angular/protractor/issues/453
