@@ -1,4 +1,4 @@
-`SVN Status – Status of the working copy`
+``SVN Status – Status of the working copy``
 svn status  
 
 svn update
