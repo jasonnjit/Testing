@@ -1,0 +1,10 @@
+`SVN Status – Status of the working copy`
+svn status  
+
+svn update
+
+svn commit -m "[artf]message" file_name
+
+svn add file_name
+
+
