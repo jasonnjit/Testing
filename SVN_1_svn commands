@@ -1,10 +1,11 @@
-``SVN Status – Status of the working copy``
+1. SVN Status – Status of the working copy
 svn status  
+svn help status 
 
-svn update
+2. svn update
 
-svn commit -m "[artf]message" file_name
+3. svn commit -m "[artf]message" file_name
 
-svn add file_name
+4. svn add file_name
 
 
