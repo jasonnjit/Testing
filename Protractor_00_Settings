@@ -27,7 +27,7 @@
     
     package.json                                           "browserstack-webdriver": "2.41.1"
     
-
+    In trunk/test/                                         BrowserStackLocal.exe      
 
 
 
