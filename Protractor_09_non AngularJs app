@@ -2,3 +2,38 @@ Protractor is built on top of WebDriver (Selenium) for AngularJs app, but it's p
 
 Check this:
 https://github.com/angular/protractor/issues/453
+
+How to test on non-Angular app?
+
+1. add this line into scripts
+browser.ignoreSynchronization = true;
+
+2. use the comment out scripts below if necessary
+
+//    browser.driver.findElement(By.id('username')).clear();
+//    (browser.driver.findElement(By.id('password'))).clear();
+//    (browser.driver.findElement(By.id('username'))).sendKeys('CHAINAD2720');
+//    (browser.driver.findElement(By.id('password'))).sendKeys('NC2017nc');
+//    (browser.driver.findElement(By.id('buttonStyle'))).click();
+    
+    element(by.id("username")).clear();
+    element(by.id("password")).clear();
+    element(by.id("username")).sendKeys('CHAINAD2720');
+    element(by.id("password")).sendKeys('NC2017nc');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
