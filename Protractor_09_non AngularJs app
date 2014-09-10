@@ -21,6 +21,15 @@ browser.ignoreSynchronization = true;
     element(by.id("username")).sendKeys('CHAINAD2720');
     element(by.id("password")).sendKeys('NC2017nc');
 
+3. Check this link
+https://github.com/angular/protractor/blob/master/docs/api-overview.md
+
+It says, 
+browser - A wrapper around an instance of WebDriver, used for navigation and page-wide information. 
+The browser.get method loads a page. Protractor expects Angular to be present on a page, so it will throw an error 
+if the page it is attempting to load does not contain the Angular library. (If you need to interact with a 
+non-Angular page, you may access the wrapped webdriver instance directly with browser.driver).
+
 
 
 
