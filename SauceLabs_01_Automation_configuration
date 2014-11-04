@@ -1,0 +1,24 @@
+How to automation test on SauceLabs:
+
+1. In Protractor conf.js file, add:
+  sauceUser: 'jhao',
+  sauceKey: 'xxxxxxxxxx',
+  
+  Be careful with those multiCapabilities, they should look like below. The names should be same with those names in 
+  this link. (https://saucelabs.com/platforms/webdriver) We should use WebDriver and nodejs!!!
+  
+        {   "name":"Chrome",
+            "browserName": "googlechrome",
+            "platform": "Windows 7",
+            "browser-version": "37"}
+        ,
+        
+        {   "name":"FF",
+            'browserName': 'firefox',
+            'platform': "Windows 7",
+            'version': '33'
+        }
+  
+2. Sauce Connect:
+https://docs.saucelabs.com/reference/sauce-connect/
+
