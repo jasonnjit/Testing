@@ -7,17 +7,17 @@ How to automation test on SauceLabs:
   Be careful with those multiCapabilities, they should look like below. The names should be same with those names in 
   this link. (https://saucelabs.com/platforms/webdriver) We should use WebDriver and nodejs!!!
   
-        {   "name":"Chrome",
-            "browserName": "googlechrome",
-            "platform": "Windows 7",
-            "browser-version": "37"}
+        {"name":"Chrome",
+         "browserName": "chrome",
+         "platform": "Windows 7",
+         "version": "37"}
         ,
         
-        {   "name":"FF",
-            'browserName': 'firefox',
-            'platform': "Windows 7",
-            'version': '33'
-        }
+        {"name":"FF",
+         "browserName": "firefox",
+         "platform": "Windows 7",
+         "version": "32"}
+         ,
   
 2. Sauce Connect:
 https://docs.saucelabs.com/reference/sauce-connect/
