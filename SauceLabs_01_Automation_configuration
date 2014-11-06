@@ -4,8 +4,8 @@ How to automation test on SauceLabs:
   sauceUser: 'jhao',
   sauceKey: 'xxxxxxxxxx',
   
-  Be careful with those multiCapabilities, they should look like below. The names should be same with those names in 
-  this link. (https://saucelabs.com/platforms/webdriver) We should use WebDriver and nodejs!!!
+  Be careful with those multiCapabilities, which should look like below. The names should be same with those names in 
+  this link. (https://saucelabs.com/platforms/webdriver) Use WebDriver and nodejs!!!
   
         {"name":"Chrome",
          "browserName": "chrome",
@@ -21,4 +21,10 @@ How to automation test on SauceLabs:
   
 2. Sauce Connect:
 https://docs.saucelabs.com/reference/sauce-connect/
+Run sc -u jhao -k yourkey in one terminal
 
+3. Run automation tests
+Open another terminal, run grunt test:e2e --specs=test\e2e\login-spec.js
+
+4. SauceLabs online result
+Open SauceLabs, go to your account. Then you can find the result for each session with screencast!!!
