@@ -1,0 +1,4 @@
+How to switch to a frame(2 methods):
+
+1. ptor.switchTo().frame('merchant_app');
+2. browser.switchTo().frame('merchant_app');
