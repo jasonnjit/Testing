@@ -34,4 +34,54 @@ Solution:
   4. Also, it is still coming out the fatal error: protractor exited with code: 8
 
 
-3. 
+3. Testing against multiple browsers
+
+  3.1. In the protractor.conf.js file, in capabilities, replace the browerName line with two or more browserName lines, like below.
+
+    3.1.1 Only one browser
+      capabilities: {
+    	'browserName': 'firefox'
+      },
+
+    3.1.2 Multiple browsers
+    multiCapabilities: [{
+      'browserName': 'firefox'
+    }, {
+      'browserName': 'chrome'
+    }]
+    --------------ie is not starting now----------------
+
+  3.2. Check link below.
+    http://stackoverflow.com/questions/20692008/protractor-run-multiple-tests-in-parallel-on-different-browsers
+  
+    If you would rather have each test file just run once, but split up among multiple browsers, then use the splitTestsBetweenCapabilities option:
+    
+    splitTestsBetweenCapabilities: true
+    This blog post goes into further detail about the splitTestsBetweenCapabilities
+    
+    Also, here is a reference protractor.conf.js from Angular team.
+    https://github.com/angular/protractor/blob/master/docs/referenceConf.js
+
+
+4. current url
+  4.1. get the current url when we click the menu and redirect us to the website out of our app
+    Ex:
+    The logo 
+    This is issue is finally fixed. Use browser.driver.getCurrentUrl();
+    So, we can get the Url non-angular.
+  
+  4.2. get current url inside the app 
+    Ex: 
+    login function, like below
+    
+    it('should allow user1 to login', function () {
+                var expectUrl = ptor.baseUrl + '/#/landing';
+                loginPage.login('username', 'password');
+                ptor.sleep(10000);
+                expect(ptor.getCurrentUrl()).toBe(expectUrl);
+    
+    //            expect(element(by.id('home')).isDisplayed()).toBe(true);
+            });
+  
+
+5. 
