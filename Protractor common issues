@@ -63,7 +63,7 @@ Solution:
     https://github.com/angular/protractor/blob/master/docs/referenceConf.js
 
 
-4. current url
+4. Current url
   4.1. get the current url when we click the menu and redirect us to the website out of our app
     Ex:
     The logo 
