@@ -1,0 +1,37 @@
+Protractor common issues
+
+1. Settings for local testing & BrowserStack automation testing
+  
+  protractor.conf.js              Selenium Address
+                                  seleniumAddress: 'http://hub.browserstack.com/wd/hub',
+                                    
+                                  capabilities: {
+                                	'browser': 'firefox',
+                                    'brrowser_version': '31.0',
+                                    'os': 'Windows',
+                                    'os_version': '7',
+                                    'browserstack.user': 'username',
+                                    'browserstack.key': 'access key',
+                                    'browserstack.local': 'true'
+                                  },
+                                   
+
+    node-modules                  browserstack-webdriver
+    
+    package.json                  "browserstack-webdriver": "2.41.1"
+    
+    In trunk/test/                BrowserStackLocal.exe   
+
+
+2. fatal error: protractor exited with code: 8
+
+Solution:
+  1. Selenium should use JDK, rather than JRE, so install JDK. 
+  2. Update environment variables, add JAVA_HOME(location of JDK, the upper level of JDK' bin file location), 
+  and Path(JDK bin location). Then, close cmd, reopen a cmd. Find Java -version changed to JDK's location.
+  3. This solution worked the problem out, but there are still problems while running "grunt test:e2e", try to 
+  find if these are test files' problems.
+  4. Also, it is still coming out the fatal error: protractor exited with code: 8
+
+
+3. 
